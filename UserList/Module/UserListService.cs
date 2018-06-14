@@ -3,11 +3,11 @@ using System.Linq;
 
 namespace UserList.Module
 {
-	internal class MainService : IMainService
+	internal class UserListService : IUserListService
 	{
 		private readonly ISource source;
 
-		public MainService(ISource source)
+		public UserListService(ISource source)
 		{
 			this.source = source;
 		}

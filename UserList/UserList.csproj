@@ -46,11 +46,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Module\ILoginService.cs" />
-    <Compile Include="Module\IMainService.cs" />
+    <Compile Include="Module\IUserListService.cs" />
     <Compile Include="Module\IRegistrationService.cs" />
     <Compile Include="Module\ISource.cs" />
     <Compile Include="Module\LoginService.cs" />
-    <Compile Include="Module\MainService.cs" />
+    <Compile Include="Module\UserListService.cs" />
     <Compile Include="Module\RegistrationService.cs" />
     <Compile Include="Module\User.cs" />
     <Compile Include="Module\XMLService.cs" />

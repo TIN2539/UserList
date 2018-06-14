@@ -22,7 +22,7 @@ namespace UserList
 			var source = new XMLService();
 			var loginService = new LoginService(source);
 			var registrationService = new RegistrationService(loginService, source);
-			var mainService = new MainService(source);
+			var mainService = new UserListService(source);
 
 			var authenticationView = new AuthenticationView(applicationContext);
 			var registrationView = new RegistrationView(applicationContext);

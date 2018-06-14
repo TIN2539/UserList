@@ -2,7 +2,7 @@
 
 namespace UserList.Module
 {
-	internal interface IMainService
+	internal interface IUserListService
 	{
 		void DeleteUser(string user);
 

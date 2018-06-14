@@ -6,10 +6,10 @@ namespace UserList.Presenter
 {
 	internal class MainPresenter : IPresenter
 	{
-		private readonly IMainService mainService;
+		private readonly IUserListService mainService;
 		private readonly IMainView mainView;
 
-		public MainPresenter(IMainView mainView, IMainService mainService)
+		public MainPresenter(IMainView mainView, IUserListService mainService)
 		{
 			this.mainView = mainView;
 			this.mainService = mainService;
