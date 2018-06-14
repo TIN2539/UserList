@@ -43,14 +43,7 @@ namespace UserList.View
 
 		public void CanDelete()
 		{
-			if (usersListBox.SelectedIndex >= 0)
-			{
-				deleteButton.Enabled = true;
-			}
-			else
-			{
-				deleteButton.Enabled = false;
-			}
+			deleteButton.Enabled = usersListBox.SelectedIndex >= 0;
 		}
 
 		public void DeleteItem()
