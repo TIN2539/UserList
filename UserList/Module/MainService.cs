@@ -15,7 +15,7 @@ namespace UserList.Module
 		public void DeleteUser(string user)
 		{
 			List<User> users = source.Read("USers.xml").ToList();
-			for(int i = 0; i < users.Count; ++i)
+			for (int i = 0; i < users.Count; ++i)
 			{
 				if (users[i].Username.Equals(user))
 				{
