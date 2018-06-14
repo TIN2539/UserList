@@ -5,8 +5,8 @@ namespace UserList.Module
 {
 	internal class LoginService : ILoginService
 	{
-		IEnumerable<User> loadedUsers;
-		private ISource source;
+		private readonly ISource source;
+		private IEnumerable<User> loadedUsers;
 
 		public LoginService(ISource source)
 		{
