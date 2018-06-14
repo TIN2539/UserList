@@ -26,7 +26,7 @@ namespace UserList.Module
 			return loadUsers;
 		}
 
-		public void Save(List<User> users)
+		public void Save(IEnumerable<User> users)
 		{
 			var settings = new XmlWriterSettings
 			{

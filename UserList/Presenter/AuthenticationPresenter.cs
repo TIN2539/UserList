@@ -11,7 +11,7 @@ namespace UserList.Presenter
 		private readonly IPresenter mainPresenter;
 		private readonly IPresenter registrationPresenter;
 
-		public AuthenticationPresenter(LoginService loginService, IAuthenticationView authenticationView,
+		public AuthenticationPresenter(ILoginService loginService, IAuthenticationView authenticationView,
 			IPresenter mainPresenter, IPresenter registrationPresenter)
 		{
 			this.loginService = loginService;

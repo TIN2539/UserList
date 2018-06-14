@@ -6,6 +6,6 @@ namespace UserList.Module
 	{
 		IEnumerable<User> Read(string fileName);
 
-		void Save(List<User> users);
+		void Save(IEnumerable<User> users);
 	}
 }
