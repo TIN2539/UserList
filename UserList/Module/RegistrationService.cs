@@ -27,10 +27,10 @@ namespace UserList.Module
 		public bool CheckUserInSource(string username)
 		{
 			var hasInSource = false;
-			IEnumerable<User> loaddUsers = source.Read("Users.xml");
-			foreach (var loadUser in loaddUsers)
+			IEnumerable<User> loadedUsers = source.Read("Users.xml");
+			foreach (var loadedUser in loadedUsers)
 			{
-				if (loadUser.Username.Equals(username))
+				if (loadedUser.Username.Equals(username))
 				{
 					hasInSource = true;
 					break;

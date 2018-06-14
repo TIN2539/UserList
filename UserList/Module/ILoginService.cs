@@ -4,7 +4,7 @@
 	{
 		bool CorrectPassword(string password);
 
-		bool CorrectUsername(string usrename);
+		bool CorrectUsername(string username);
 
 		bool Login(User user);
 

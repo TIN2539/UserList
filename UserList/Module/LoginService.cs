@@ -5,7 +5,7 @@ namespace UserList.Module
 {
 	internal class LoginService : ILoginService
 	{
-		IEnumerable<User> loaddUsers;
+		IEnumerable<User> loadedUsers;
 		private ISource source;
 
 		public LoginService(ISource source)
@@ -22,16 +22,16 @@ namespace UserList.Module
 			return password.Length != 0;
 		}
 
-		public bool CorrectUsername(string usrename)
+		public bool CorrectUsername(string username)
 		{
-			return usrename.Length >= 5;
+			return username.Length >= 5;
 		}
 
 		public bool Login(User user)
 		{
 			var isCorrectUser = false;
-			loaddUsers = source.Read("Users.xml");
-			foreach (var loadUser in loaddUsers)
+			loadedUsers = source.Read("Users.xml");
+			foreach (var loadUser in loadedUsers)
 			{
 				if (loadUser.Username.Equals(user.Username) && loadUser.Password.Equals(user.Password))
 				{
