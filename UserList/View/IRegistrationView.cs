@@ -22,7 +22,7 @@ namespace UserList.View
 
 		string Username { get; }
 
-		void CheckCanRegister(bool isButtonEnable);
+		void CheckCanRegister(bool isEnable);
 
 		void SetConfirmPasswordImageState(bool isCorrect, string message);
 

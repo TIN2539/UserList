@@ -52,9 +52,9 @@ namespace UserList.View
 			ShowDialog();
 		}
 
-		public void CheckCanRegister(bool isButtonEnable)
+		public void CheckCanRegister(bool isEnable)
 		{
-			registerButton.Enabled = isButtonEnable;
+			registerButton.Enabled = isEnable;
 		}
 
 		public void SetConfirmPasswordImageState(bool isCorrect, string message)

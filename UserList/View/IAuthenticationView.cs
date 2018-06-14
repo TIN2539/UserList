@@ -18,7 +18,7 @@ namespace UserList.View
 
 		string Username { get; }
 
-		void CheckCanLogin(bool isButtonEnable);
+		void CheckCanLogin(bool isEnable);
 
 		void SetPasswordPictureBoxState(bool isCorrect, string message);
 

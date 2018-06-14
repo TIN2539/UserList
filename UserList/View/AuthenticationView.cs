@@ -34,9 +34,9 @@ namespace UserList.View
 			Application.Run(context);
 		}
 
-		public void CheckCanLogin(bool isButtonEnable)
+		public void CheckCanLogin(bool isEnable)
 		{
-			loginButton.Enabled = isButtonEnable;
+			loginButton.Enabled = isEnable;
 		}
 
 		public void SetPasswordPictureBoxState(bool isCorrect, string message)

@@ -42,7 +42,7 @@ namespace UserList.Module
 			return isCorrectUser;
 		}
 
-		public bool LoginButtonState(User user)
+		public bool LoginState(User user)
 		{
 			return CorrectUsername(user.Username) && CorrectPassword(user.Password);
 		}

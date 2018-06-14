@@ -8,6 +8,6 @@
 
 		bool Login(User user);
 
-		bool LoginButtonState(User user);
+		bool LoginState(User user);
 	}
 }

@@ -38,7 +38,7 @@ namespace UserList.Presenter
 
 		private void View_CanLogin(object sender, EventArgs e)
 		{
-			authenticationView.CheckCanLogin(loginService.LoginButtonState(new User(authenticationView.Username, authenticationView.Password)));
+			authenticationView.CheckCanLogin(loginService.LoginState(new User(authenticationView.Username, authenticationView.Password)));
 		}
 
 		private void View_Login(object sender, EventArgs e)
