@@ -6,15 +6,13 @@ namespace UserList.View
 {
 	internal interface IMainView : IView
 	{
-		event EventHandler<EventArgs> Delete;
-
-		event EventHandler<EventArgs> LoadList;
-
-		event EventHandler<EventArgs> Selected;
-
 		bool CanDelete { get; }
 
 		string SelectedItem { get; }
+
+		event EventHandler<EventArgs> Delete;
+		event EventHandler<EventArgs> LoadList;
+		event EventHandler<EventArgs> Selected;
 
 		void AddUsersToListBox(IEnumerable<User> users);
 
