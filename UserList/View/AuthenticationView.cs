@@ -14,19 +14,16 @@ namespace UserList.View
 			InitializeComponent();
 		}
 
-		public event EventHandler<EventArgs> CanLogin;
-
-		public event EventHandler<EventArgs> Login;
-
-		public event EventHandler<EventArgs> PasswordChange;
-
-		public event EventHandler<EventArgs> Register;
-
-		public event EventHandler<EventArgs> UsernameChange;
-
 		public string Password => passwordTextBox.Text;
 
 		public string Username => usernameTextBox.Text;
+
+
+		public event EventHandler<EventArgs> CanLogin;
+		public event EventHandler<EventArgs> Login;
+		public event EventHandler<EventArgs> PasswordChange;
+		public event EventHandler<EventArgs> Register;
+		public event EventHandler<EventArgs> UsernameChange;
 
 		public new void Show()
 		{

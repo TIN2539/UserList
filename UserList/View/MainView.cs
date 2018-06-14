@@ -16,10 +16,12 @@ namespace UserList.View
 			InitializeComponent();
 		}
 
+		public bool CanDelete => usersListBox.SelectedIndex >= 0;
+
+		public string SelectedItem => usersListBox.SelectedItem.ToString();
+
 		public event EventHandler<EventArgs> Delete;
-
 		public event EventHandler<EventArgs> LoadList;
-
 		public event EventHandler<EventArgs> Selected;
 
 		public new void Show()
@@ -41,19 +43,14 @@ namespace UserList.View
 			}
 		}
 
-		public void CanDelete()
-		{
-			deleteButton.Enabled = usersListBox.SelectedIndex >= 0;
-		}
-
 		public void DeleteItem()
 		{
 			usersListBox.Items.RemoveAt(usersListBox.SelectedIndex);
 		}
 
-		public string GetSelectedItem()
+		public void SetDeleteState()
 		{
-			return usersListBox.SelectedItem.ToString();
+			deleteButton.Enabled = CanDelete;
 		}
 
 		private void DeleteButton_Click(object sender, EventArgs e)

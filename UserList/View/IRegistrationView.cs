@@ -4,23 +4,18 @@ namespace UserList.View
 {
 	internal interface IRegistrationView : IView
 	{
-		event EventHandler<EventArgs> Cancel;
-
-		event EventHandler<EventArgs> CanRegister;
-
-		event EventHandler<EventArgs> ConfirmPasswordChange;
-
-		event EventHandler<EventArgs> PasswordChange;
-
-		event EventHandler<EventArgs> Register;
-
-		event EventHandler<EventArgs> UsernameChange;
-
 		string ConfirmPassword { get; }
 
 		string Password { get; }
 
 		string Username { get; }
+
+		event EventHandler<EventArgs> Cancel;
+		event EventHandler<EventArgs> CanRegister;
+		event EventHandler<EventArgs> ConfirmPasswordChange;
+		event EventHandler<EventArgs> PasswordChange;
+		event EventHandler<EventArgs> Register;
+		event EventHandler<EventArgs> UsernameChange;
 
 		void CheckCanRegister(bool isEnable);
 

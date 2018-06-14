@@ -12,12 +12,14 @@ namespace UserList.View
 
 		event EventHandler<EventArgs> Selected;
 
-		void AddUsersToListBox(IEnumerable<User> users);
+		bool CanDelete { get; }
 
-		void CanDelete();
+		string SelectedItem { get; }
+
+		void AddUsersToListBox(IEnumerable<User> users);
 
 		void DeleteItem();
 
-		string GetSelectedItem();
+		void SetDeleteState();
 	}
 }

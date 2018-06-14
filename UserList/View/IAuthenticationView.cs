@@ -4,19 +4,15 @@ namespace UserList.View
 {
 	internal interface IAuthenticationView : IView
 	{
-		event EventHandler<EventArgs> CanLogin;
-
-		event EventHandler<EventArgs> Login;
-
-		event EventHandler<EventArgs> PasswordChange;
-
-		event EventHandler<EventArgs> Register;
-
-		event EventHandler<EventArgs> UsernameChange;
-
 		string Password { get; }
 
 		string Username { get; }
+
+		event EventHandler<EventArgs> CanLogin;
+		event EventHandler<EventArgs> Login;
+		event EventHandler<EventArgs> PasswordChange;
+		event EventHandler<EventArgs> Register;
+		event EventHandler<EventArgs> UsernameChange;
 
 		void CheckCanLogin(bool isEnable);
 

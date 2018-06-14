@@ -14,23 +14,18 @@ namespace UserList.View
 			InitializeComponent();
 		}
 
-		public event EventHandler<EventArgs> Cancel;
-
-		public event EventHandler<EventArgs> CanRegister;
-
-		public event EventHandler<EventArgs> ConfirmPasswordChange;
-
-		public event EventHandler<EventArgs> PasswordChange;
-
-		public event EventHandler<EventArgs> Register;
-
-		public event EventHandler<EventArgs> UsernameChange;
-
 		public string ConfirmPassword => confirmPasswordTextBox.Text;
 
 		public string Password => passwordTextBox.Text;
 
 		public string Username => SpacebarDelete();
+
+		public event EventHandler<EventArgs> Cancel;
+		public event EventHandler<EventArgs> CanRegister;
+		public event EventHandler<EventArgs> ConfirmPasswordChange;
+		public event EventHandler<EventArgs> PasswordChange;
+		public event EventHandler<EventArgs> Register;
+		public event EventHandler<EventArgs> UsernameChange;
 
 		private string SpacebarDelete()
 		{

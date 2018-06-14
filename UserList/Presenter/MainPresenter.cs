@@ -31,13 +31,13 @@ namespace UserList.Presenter
 
 		private void View_Delete(object sender, EventArgs e)
 		{
-			mainService.DeleteUser(mainView.GetSelectedItem());
+			mainService.DeleteUser(mainView.SelectedItem);
 			mainView.DeleteItem();
 		}
 
 		private void View_ItemSelected(object sender, EventArgs e)
 		{
-			mainView.CanDelete();
+			mainView.SetDeleteState();
 		}
 
 		private void View_Load(object sender, EventArgs e)
